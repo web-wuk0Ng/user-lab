@@ -1,0 +1,11 @@
+backend/target/
+frontend/node_modules/
+frontend/dist/
+.idea/
+*.iml
+.env
+.env.*
+!.env.example
+lab-secrets.local.txt
+运行记录/
+mock-llm/request-log.txt
