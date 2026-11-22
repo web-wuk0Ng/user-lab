@@ -15,8 +15,4 @@ UserMapper mapper = mock(UserMapper.class);
 ResponseStatusException e = assertThrows(ResponseStatusException.class, () -> new UserService(mapper).get(9L));
 assertEquals(404, e.getStatusCode().value());
 }
-// Intentionally failing test: used once to prove CI really blocks a red build.
-@Test void ciRedDemo() {
-assertEquals(1, 2, "intentional failure: CI must block this build");
-}
 }
